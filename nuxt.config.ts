@@ -61,10 +61,6 @@ export default defineNuxtConfig({
         },
       ],
     },
-    workbox: {
-      navigateFallback: null,
-      globPatterns: ["**/*.{js,css}"],
-    },
     devOptions: {
       enabled: true,
       type: "module",

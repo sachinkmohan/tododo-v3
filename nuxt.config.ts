@@ -13,6 +13,7 @@ export default defineNuxtConfig({
   },
 
   pwa: {
+    registerWebManifestInRouteRules: true,
     manifest: {
       name: "Tododo-V3",
       short_name: "Tododo",
@@ -20,7 +21,6 @@ export default defineNuxtConfig({
       theme_color: "#ffffff",
       background_color: "#ffffff",
       display: "standalone",
-      start_url: "/",
       icons: [
         {
           src: "icons/icon-64x64.png",

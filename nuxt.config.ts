@@ -11,6 +11,11 @@ export default defineNuxtConfig({
       },
     },
   },
+  nitro: {
+    prerender: {
+      routes: ["/"],
+    },
+  },
 
   pwa: {
     registerWebManifestInRouteRules: true,
@@ -65,11 +70,11 @@ export default defineNuxtConfig({
       globDirectory: "dist",
       globPatterns: ["**/*.{js,css}"],
       globIgnores: ["**/node_modules/**/*", "sw.js", "workbox-*.js"],
-      navigateFallback: null,
     },
     devOptions: {
       enabled: true,
       type: "module",
+      navigateFallback: "/",
     },
   },
 });
